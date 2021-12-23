@@ -18,9 +18,9 @@ const GetAllEmp = () => {
             {get &&
           get.map((res) => (
             <div key={res.id} className="res alert alert-secondary mt-2" role="alert">
-              <p className="resId">{`id: ${res.id}`}</p>
-              <p className="resName">{`name: ${res.name}`}</p>
-              <p className="resRole">{`role: ${res.role}`}</p>
+              <p className="resId">{`ID: ${res.id}`}</p>
+              <p className="resName">{`Name: ${res.name}`}</p>
+              <p className="resRole">{`Role: ${res.role}`}</p>
             </div>
           ))}
         </div>

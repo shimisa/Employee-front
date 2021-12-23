@@ -22,11 +22,11 @@ function AddNewEmployee() {
     setUserInput((p) => ({
       ...p,
       [e.target.name]: e.target.value,
-    }));
+    }));   
   }
 
   return (
-    <>
+    <div>
       <Input
         name="name"
         placeholder="Name"
@@ -41,8 +41,8 @@ function AddNewEmployee() {
       />
 
       <Button title="Add New Employee" onClick={addNew} />
-      {post && <p className="alert">{`Added new employee: ${post.name}`}</p>}
-    </>
+      {post && <p className="alert">{`Added new employee: ${post.name}` }</p>}
+    </div>
   );
 }
 
