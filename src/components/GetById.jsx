@@ -15,8 +15,8 @@ function GetById() {
   };
 
   const handleClick = async () => {
-      const empById = await getEmployeesById(userInput.id);
-      setEmployee(empById);
+    const empById = await getEmployeesById(userInput.id);
+    setEmployee(empById);
   };
 
   return (
@@ -28,7 +28,12 @@ function GetById() {
         placeholder="ID"
       />
       <Button title="Get by ID" onClick={handleClick} />
-      {employee && <p>{`Found employee: ${employee.name}`}</p>}
+      {employee && 
+      <div className="res alert alert-secondary mt-2" role="alert">
+        <p className="resId">{`ID: ${employee.id}`}</p>
+        <p className="resName">{`Name: ${employee.name}`}</p>
+        <p className="resRole">{`Role: ${employee.role}`}</p>
+      </div> }
     </div>
   );
 }

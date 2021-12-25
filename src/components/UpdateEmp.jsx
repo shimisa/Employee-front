@@ -51,12 +51,19 @@ function UpdateEmp() {
       />
 
       <Button title="Update Employee" onClick={handleClick} />
-      {updatedEmp && (
-        <p className="alert">
-          {" "}
-          {`Updated Employee: ${updatedEmp.name} ${updatedEmp.role}`}
-        </p>
-      )}
+
+
+      {updatedEmp && 
+      <>
+      <h3 className="msg">Updated Employee:</h3>
+      <div className="res alert alert-secondary mt-2" role="alert">
+        <p className="resId">{`ID: ${updatedEmp.id}`}</p>
+        <p className="resName">{`Name: ${updatedEmp.name}`}</p>
+        <p className="resRole">{`Role: ${updatedEmp.role}`}</p>
+      </div>
+      </>
+       }
+
     </div>
   );
 }

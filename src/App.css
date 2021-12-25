@@ -8,11 +8,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -38,8 +34,4 @@
   }
 }
 
-.btn {
-  background-color: cadetblue;
-  font-size: calc(10px + 2vmin);
-  justify-content: center;
-}
+

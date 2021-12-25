@@ -18,9 +18,9 @@ function GetById() {
       var isDeleted = false;
       isDeleted = await deleteEmpById(userInput.id);
       if(isDeleted === true){
-        setMsg(<p className="alert"> Employee ID {userInput.id} was deleted </p>)        
+        setMsg(<h3 className="msg"> Employee ID {userInput.id} was deleted </h3>)        
       }else{
-          setMsg(<p className="alert"> Could not find Employee ID {userInput.id} </p>)   
+          setMsg(<h3 className="msg"> Could not find Employee ID {userInput.id} </h3>)   
       }
       
   };

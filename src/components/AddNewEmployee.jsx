@@ -41,7 +41,14 @@ function AddNewEmployee() {
       />
 
       <Button title="Add New Employee" onClick={addNew} />
-      {post && <p className="alert">{`Added new employee: ${post.name}` }</p>}
+      {post && 
+      <> <h3 className="msg">Added New Employee:</h3>
+      <div className="res alert alert-secondary mt-2" role="alert">
+        <p className="resId">{`ID: ${post.id}`}</p>
+        <p className="resName">{`Name: ${post.name}`}</p>
+        <p className="resRole">{`Role: ${post.role}`}</p>
+      </div> 
+      </>}
     </div>
   );
 }
